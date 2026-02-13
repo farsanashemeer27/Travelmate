@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Plan Your Trip</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 class="title">🗺️ Plan Your Trip</h1>
+
+    <div class="trip-container">
+
+        <label>Destination (Kerala District)</label>
+<select>
+    <option value="">-- Select District --</option>
+    <option>Alappuzha</option>
+    <option>Ernakulam</option>
+    <option>Idukki</option>
+    <option>Kannur</option>
+    <option>Kasaragod</option>
+    <option>Kollam</option>
+    <option>Kottayam</option>
+    <option>Kozhikode</option>
+    <option>Malappuram</option>
+    <option>Palakkad</option>
+    <option>Pathanamthitta</option>
+    <option>Thiruvananthapuram</option>
+    <option>Thrissur</option>
+    <option>Wayanad</option>
+</select>
+        <label>Start Date</label>
+        <input type="date">
+
+        <label>End Date</label>
+        <input type="date">
+
+        <label>Number of Travelers</label>
+        <input type="number" placeholder="e.g. 2">
+
+        <label>Budget (Approx)</label>
+        <input type="number" placeholder="₹ Budget">
+
+        <label>Travel Style</label>
+        <select>
+            <option>Adventure</option>
+            <option>Relaxation</option>
+            <option>Family</option>
+            <option>Solo</option>
+        </select>
+
+        <button class="plan-btn" onclick="planTrip()">Plan My Trip ✨</button>
+
+<p id="result"></p>
+
+<script>
+function planTrip() {
+
+    const destination = document.querySelector("select").value;
+    const startDate = document.querySelectorAll("input")[0].value;
+    const endDate = document.querySelectorAll("input")[1].value;
+    const travelers = document.querySelectorAll("input")[2].value;
+    const budget = document.querySelectorAll("input")[3].value;
+    const style = document.querySelectorAll("select")[1].value;
+
+    fetch("/plan-trip", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            destination,
+            startDate,
+            endDate,
+            travelers,
+            budget,
+            style
+        })
+    })
+    .then(res => res.json())
+    .then(data => {
+        document.getElementById("result").innerText = data.message;
+    });
+
+}
+</script>
+
+    </div>
+
+</body>
+</html>

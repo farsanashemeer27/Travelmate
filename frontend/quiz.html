@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Travel Readiness Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 class="title">🧳 Travel Readiness Quiz</h1>
+
+    <div class="quiz-container">
+
+        <p><strong>1. Have you booked your accommodation?</strong></p>
+        <label><input type="radio" name="q1" value="yes"> Yes</label><br>
+        <label><input type="radio" name="q1" value="no"> No</label>
+
+        <p><strong>2. Do you have valid ID / documents?</strong></p>
+        <label><input type="radio" name="q2" value="yes"> Yes</label><br>
+        <label><input type="radio" name="q2" value="no"> No</label>
+
+        <p><strong>3. Is your budget planned?</strong></p>
+        <label><input type="radio" name="q3" value="yes"> Yes</label><br>
+        <label><input type="radio" name="q3" value="no"> No</label>
+
+        <p><strong>4. Have you checked weather conditions?</strong></p>
+        <label><input type="radio" name="q4" value="yes"> Yes</label><br>
+        <label><input type="radio" name="q4" value="no"> No</label>
+
+        <p><strong>5. Have you informed someone about your trip?</strong></p>
+        <label><input type="radio" name="q5" value="yes"> Yes</label><br>
+        <label><input type="radio" name="q5" value="no"> No</label>
+
+        <button class="quiz-btn" onclick="submitQuiz()">Check Readiness ✅</button>
+
+        <div class="quiz-result" id="quizResult">
+            <p>🎉 You are almost ready for your trip!</p>
+            <p>✔ Complete pending tasks before you travel.</p>
+        </div>
+
+    </div>
+<script>
+function submitQuiz() {
+    let score = 0;
+
+    if (document.querySelector('input[name="q1"]:checked')?.value === "yes") score++;
+    if (document.querySelector('input[name="q2"]:checked')?.value === "yes") score++;
+    if (document.querySelector('input[name="q3"]:checked')?.value === "yes") score++;
+    if (document.querySelector('input[name="q4"]:checked')?.value === "yes") score++;
+    if (document.querySelector('input[name="q5"]:checked')?.value === "yes") score++;
+
+    fetch("http://localhost:3000/quiz-result", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ score })
+    })
+    .then(res => res.json())
+    .then(data => {
+        document.getElementById("quizResult").innerHTML =
+            `<p><strong>${data.result}</strong></p>`;
+    });
+}
+</script>
+</body>
+</html>

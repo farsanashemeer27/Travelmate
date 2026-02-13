@@ -1,0 +1,20 @@
+[
+  {
+    "destination": "Ernakulam",
+    "startDate": "2026-10-14",
+    "endDate": "2026-10-17",
+    "travelers": "-2",
+    "budget": "5000",
+    "style": "Adventure",
+    "createdAt": "2026-02-13T17:35:36.038Z"
+  },
+  {
+    "destination": "Kollam",
+    "startDate": "2026-10-14",
+    "endDate": "2026-10-17",
+    "travelers": "-2",
+    "budget": "5000",
+    "style": "Adventure",
+    "createdAt": "2026-02-13T17:36:05.883Z"
+  }
+]

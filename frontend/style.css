@@ -1,0 +1,232 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.title {
+    margin-top: 30px;
+}
+
+/* Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    width: 80%;
+    margin: 40px auto;
+}
+
+/* Cards */
+.grid-card {
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 6px 6px 0px black;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.grid-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Colors */
+.pink {
+    background-color: #f7a8c4;
+}
+
+.yellow {
+    background-color: #f4d06f;
+}
+
+.white {
+    background-color: #7f8c8d;
+}
+.red{
+    background-color: #ff4c4c;
+}
+
+.icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+/* Trip Planner Page */
+.trip-container {
+    width: 40%;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 6px 6px 0px black;
+    text-align: left;
+}
+
+.trip-container label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.trip-container input,
+.trip-container select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.plan-btn {
+    margin-top: 25px;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 15px;
+    background-color: #f7a8c4;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 4px 4px 0px black;
+}
+
+.plan-btn:hover {
+    background-color: #ff90b8;
+}
+/* Safety Checker Page */
+.safety-container {
+    width: 40%;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 6px 6px 0px black;
+    text-align: left;
+}
+
+.safety-container label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.safety-container select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.check-btn {
+    margin-top: 25px;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 15px;
+    background-color: #f4d06f;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 4px 4px 0px black;
+}
+
+.check-btn:hover {
+    background-color: #ffd24d;
+}
+
+.safety-result {
+    margin-top: 20px;
+    background: #eafaf1;
+    padding: 15px;
+    border-radius: 15px;
+    font-size: 14px;
+}
+/* Budget Calculator Page */
+.budget-container {
+    width: 40%;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 6px 6px 0px black;
+    text-align: left;
+}
+
+.budget-container label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.budget-container input,
+.budget-container select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.calc-btn {
+    margin-top: 25px;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 15px;
+    background-color: #7f8c8d;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 4px 4px 0px black;
+}
+
+.calc-btn:hover {
+    background-color: #6c7a7a;
+}
+
+.budget-result {
+    margin-top: 20px;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 15px;
+    font-size: 14px;
+}
+/* Quiz Page */
+.quiz-container {
+    width: 45%;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 6px 6px 0px black;
+    text-align: left;
+}
+
+.quiz-container p {
+    margin-top: 15px;
+}
+
+.quiz-btn {
+    margin-top: 25px;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 15px;
+    background-color: #ff4c4c;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 4px 4px 0px black;
+}
+
+.quiz-btn:hover {
+    background-color: #e63b3b;
+}
+
+.quiz-result {
+    margin-top: 20px;
+    background: #fff3f3;
+    padding: 15px;
+    border-radius: 15px;
+    font-size: 14px;
+}
