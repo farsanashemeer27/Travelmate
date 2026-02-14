@@ -42,3 +42,11 @@ Feature 4: 🧳 Travel Readiness Quiz – Check readiness before traveling with 
 PROJECT DOCUMENTATION
 For Software:
 Screenshots
+![Homepage](frontend/screenshots/home.png)
+*Shows the homepage with 4 main functionalities.*
+
+![Trip Planner](frontend/screenshots/trip-planner.png)
+*Shows the Trip Planner page with form inputs.*
+
+![Travel Readiness Quiz](frontend/screenshots/quiz.png)
+*Shows the Travel Readiness Quiz module.*
