@@ -45,7 +45,7 @@ Screenshots
 ![Homepage](frontend/screenshots/home.png)
 *Shows the homepage with 4 main functionalities.*
 
-![Trip Planner](frontend/screenshots/trip-planner.png)
+![Trip Planner](frontend/screenshots/trip.png)
 *Shows the Trip Planner page with form inputs.*
 
 ![Travel Readiness Quiz](frontend/screenshots/quiz.png)
