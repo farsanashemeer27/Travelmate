@@ -55,10 +55,10 @@ Screenshots
 
 ### System Architecture
 
-![System Architecture](screenshots/architecture.jpeg)
+![System Architecture](screenshots/architecture.png)
 *This diagram illustrates the system architecture of Travel Mate, showing the frontend, backend, modules, and data flow.*
 
 ### Application Workflow
 
-![Application Workflow](screenshots/application.jpeg)
+![Application Workflow](screenshots/application.png)
 *This diagram explains the step-by-step workflow of Travel Mate, from user input on the frontend to backend processing and result display.*
