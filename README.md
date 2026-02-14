@@ -60,5 +60,5 @@ Screenshots
 
 ### Application Workflow
 
-![Application Workflow](screenshots/workflow.jpeg)
+![Application Workflow](screenshots/application.jpeg)
 *This diagram explains the step-by-step workflow of Travel Mate, from user input on the frontend to backend processing and result display.*
