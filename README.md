@@ -50,3 +50,15 @@ Screenshots
 
 ![Travel Readiness Quiz](frontend/screenshots/quiz.png)
 *Shows the Travel Readiness Quiz module.*
+
+## Diagrams
+
+### System Architecture
+
+![System Architecture](screenshots/architecture.jpeg)
+*This diagram illustrates the system architecture of Travel Mate, showing the frontend, backend, modules, and data flow.*
+
+### Application Workflow
+
+![Application Workflow](screenshots/workflow.jpeg)
+*This diagram explains the step-by-step workflow of Travel Mate, from user input on the frontend to backend processing and result display.*
