@@ -42,3 +42,23 @@ Feature 4: 🧳 Travel Readiness Quiz – Check readiness before traveling with 
 PROJECT DOCUMENTATION
 For Software:
 Screenshots
+![Homepage](frontend/screenshots/home.png)
+*Shows the homepage with 4 main functionalities.*
+
+![Trip Planner](frontend/screenshots/trip.png)
+*Shows the Trip Planner page with form inputs.*
+
+![Travel Readiness Quiz](frontend/screenshots/quiz.png)
+*Shows the Travel Readiness Quiz module.*
+
+## Diagrams
+
+### System Architecture
+
+![System Architecture](frontend/screenshots/architecture.png)
+*This diagram illustrates the system architecture of Travel Mate, showing the frontend, backend, modules, and data flow.*
+
+### Application Workflow
+
+![Application Workflow](frontend/screenshots/application.png)
+*This diagram explains the step-by-step workflow of Travel Mate, from user input on the frontend to backend processing and result display.*
